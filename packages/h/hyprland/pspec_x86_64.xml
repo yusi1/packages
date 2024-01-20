@@ -1,0 +1,272 @@
+<PISI>
+    <Source>
+        <Name>hyprland</Name>
+        <Homepage>https://github.com/hyprwm/Hyprland</Homepage>
+        <Packager>
+            <Name>Yusef Aslam</Name>
+            <Email>YUZi54780@outlook.com</Email>
+        </Packager>
+        <License>BSD</License>
+        <PartOf>desktop</PartOf>
+        <Summary xml:lang="en">A highly customizable dynamic tiling Wayland compositor.</Summary>
+        <Description xml:lang="en">A highly customizable dynamic tiling Wayland compositor.
+</Description>
+        <Archive type="binary" sha1sum="79eb0752a961b8e0d15c77d298c97498fbc89c5a">https://sources.getsol.us/README.Solus</Archive>
+    </Source>
+    <Package>
+        <Name>hyprland</Name>
+        <Summary xml:lang="en">A highly customizable dynamic tiling Wayland compositor.</Summary>
+        <Description xml:lang="en">A highly customizable dynamic tiling Wayland compositor.
+</Description>
+        <PartOf>desktop</PartOf>
+        <Files>
+            <Path fileType="executable">/usr/bin/Hyprland</Path>
+            <Path fileType="executable">/usr/bin/hyprctl</Path>
+            <Path fileType="executable">/usr/bin/hyprpm</Path>
+            <Path fileType="data">/usr/share/hyprland-protocols/protocols/hyprland-global-shortcuts-v1.xml</Path>
+            <Path fileType="data">/usr/share/hyprland-protocols/protocols/hyprland-toplevel-export-v1.xml</Path>
+            <Path fileType="data">/usr/share/hyprland/hyprland.conf</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_2K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_4K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_8K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_anime2_2K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_anime2_4K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_anime2_8K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_anime_2K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_anime_4K.png</Path>
+            <Path fileType="data">/usr/share/hyprland/wall_anime_8K.png</Path>
+            <Path fileType="man">/usr/share/man/man1/Hyprland.1</Path>
+            <Path fileType="man">/usr/share/man/man1/hyprctl.1</Path>
+            <Path fileType="data">/usr/share/wayland-sessions/hyprland.desktop</Path>
+            <Path fileType="data">/usr/share/xdg-desktop-portal/hyprland-portals.conf</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>hyprland-devel</Name>
+        <Summary xml:lang="en">Development files for hyprland</Summary>
+        <Description xml:lang="en">A highly customizable dynamic tiling Wayland compositor.
+</Description>
+        <PartOf>programming.devel</PartOf>
+        <RuntimeDependencies>
+            <Dependency release="1">hyprland</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include/hyprland/protocols/cursor-shape-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/fractional-scale-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/hyprland-global-shortcuts-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/hyprland-toplevel-export-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/idle-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/linux-dmabuf-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/pointer-constraints-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/tablet-unstable-v2-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/tearing-control-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/text-input-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/wlr-foreign-toplevel-management-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/wlr-layer-shell-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/wlr-output-power-management-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/wlr-screencopy-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/xdg-output-unstable-v1-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/protocols/xdg-shell-protocol.h</Path>
+            <Path fileType="header">/usr/include/hyprland/src/Compositor.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/SharedDefs.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/Window.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/config/ConfigDataValues.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/config/ConfigManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/config/defaultConfig.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/debug/CrashReporter.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/debug/HyprCtl.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/debug/HyprDebugOverlay.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/debug/HyprNotificationOverlay.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/debug/Log.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/debug/TracyDefines.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/defines.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/events/Events.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/AnimatedVariable.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/BezierCurve.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Box.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Color.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/MiscFunctions.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Monitor.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Region.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Splashes.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/SubsurfaceTree.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Timer.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/VarList.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Vector2D.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/WLClasses.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/WLListener.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/WLSurface.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Watchdog.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/Workspace.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/X11Stubs.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/helpers/XWaylandStubs.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/hyprerror/HyprError.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/includes.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/init/initHelpers.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/layout/DwindleLayout.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/layout/IHyprLayout.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/layout/MasterLayout.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/macros.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/AnimationManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/EventManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/HookSystemManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/KeybindManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/LayoutManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/ProtocolManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/SessionLockManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/ThreadManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/XWaylandManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/input/InputManager.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/managers/input/InputMethodRelay.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/pch/pch.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/plugins/HookSystem.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/plugins/PluginAPI.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/plugins/PluginSystem.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/FractionalScale.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/GlobalShortcuts.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/Screencopy.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/TextInputV1.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/ToplevelExport.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/ToplevelExportWlrFuncs.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/WaylandProtocol.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/protocols/XDGOutput.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/Framebuffer.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/OpenGL.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/Renderbuffer.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/Renderer.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/Shader.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/Shaders.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/Texture.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/Transformer.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/decorations/CHyprBorderDecoration.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/decorations/CHyprDropShadowDecoration.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/decorations/CHyprGroupBarDecoration.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/decorations/DecorationPositioner.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/decorations/IHyprWindowDecoration.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/shaders/Border.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/shaders/Shadow.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/render/shaders/Textures.hpp</Path>
+            <Path fileType="header">/usr/include/hyprland/src/version.h</Path>
+            <Path fileType="header">/usr/include/hyprland/src/version.h.in</Path>
+            <Path fileType="header">/usr/include/wlr/backend.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/drm.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/headless.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/interface.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/libinput.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/multi.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/session.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/wayland.h</Path>
+            <Path fileType="header">/usr/include/wlr/backend/x11.h</Path>
+            <Path fileType="header">/usr/include/wlr/config.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_buffer.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_keyboard.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_output.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_pointer.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_switch.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_tablet_pad.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_tablet_tool.h</Path>
+            <Path fileType="header">/usr/include/wlr/interfaces/wlr_touch.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/allocator.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/dmabuf.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/drm_format_set.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/egl.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/gles2.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/interface.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/pass.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/pixman.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/swapchain.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/wlr_renderer.h</Path>
+            <Path fileType="header">/usr/include/wlr/render/wlr_texture.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_buffer.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_compositor.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_content_type_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_cursor.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_cursor_shape_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_damage_ring.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_data_control_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_data_device.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_drm.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_drm_lease_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_export_dmabuf_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_foreign_toplevel_management_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_fractional_scale_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_fullscreen_shell_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_gamma_control_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_idle_inhibit_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_idle_notify_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_input_device.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_input_method_v2.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_keyboard.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_keyboard_group.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_keyboard_shortcuts_inhibit_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_layer_shell_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_linux_dmabuf_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_matrix.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_output.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_output_layer.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_output_layout.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_output_management_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_output_power_management_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_pointer.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_pointer_constraints_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_pointer_gestures_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_presentation_time.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_primary_selection.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_primary_selection_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_region.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_relative_pointer_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_scene.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_screencopy_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_seat.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_security_context_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_server_decoration.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_session_lock_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_shm.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_single_pixel_buffer_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_subcompositor.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_switch.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_tablet_pad.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_tablet_tool.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_tablet_v2.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_tearing_control_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_text_input_v3.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_touch.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_viewporter.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_virtual_keyboard_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_virtual_pointer_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xcursor_manager.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xdg_activation_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xdg_decoration_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xdg_foreign_registry.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xdg_foreign_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xdg_foreign_v2.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xdg_output_v1.h</Path>
+            <Path fileType="header">/usr/include/wlr/types/wlr_xdg_shell.h</Path>
+            <Path fileType="header">/usr/include/wlr/util/addon.h</Path>
+            <Path fileType="header">/usr/include/wlr/util/box.h</Path>
+            <Path fileType="header">/usr/include/wlr/util/edges.h</Path>
+            <Path fileType="header">/usr/include/wlr/util/log.h</Path>
+            <Path fileType="header">/usr/include/wlr/util/region.h</Path>
+            <Path fileType="header">/usr/include/wlr/util/transform.h</Path>
+            <Path fileType="header">/usr/include/wlr/version.h</Path>
+            <Path fileType="header">/usr/include/wlr/xcursor.h</Path>
+            <Path fileType="header">/usr/include/wlr/xwayland.h</Path>
+            <Path fileType="header">/usr/include/wlr/xwayland/server.h</Path>
+            <Path fileType="header">/usr/include/wlr/xwayland/shell.h</Path>
+            <Path fileType="header">/usr/include/wlr/xwayland/xwayland.h</Path>
+            <Path fileType="library">/usr/lib64/libwlroots.a</Path>
+            <Path fileType="data">/usr/lib64/pkgconfig/wlroots.pc</Path>
+            <Path fileType="data">/usr/share/pkgconfig/hyprland-protocols.pc</Path>
+            <Path fileType="data">/usr/share/pkgconfig/hyprland.pc</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>2024-01-20</Date>
+            <Version>0.34.0</Version>
+            <Comment>Packaging update</Comment>
+            <Name>Yusef Aslam</Name>
+            <Email>YUZi54780@outlook.com</Email>
+        </Update>
+    </History>
+</PISI>
