@@ -20,9 +20,9 @@
 </Description>
         <PartOf>programming.library</PartOf>
         <Files>
-            <Path fileType="doc">/usr/share/doc/CHANGELOG.md</Path>
-            <Path fileType="doc">/usr/share/doc/README.md</Path>
-            <Path fileType="data">/usr/share/licenses/LICENSE</Path>
+            <Path fileType="doc">/usr/share/doc/cxxopts/CHANGELOG.md</Path>
+            <Path fileType="doc">/usr/share/doc/cxxopts/README.md</Path>
+            <Path fileType="data">/usr/share/licenses/cxxopts/LICENSE</Path>
         </Files>
     </Package>
     <Package>
