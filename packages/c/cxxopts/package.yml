@@ -1,0 +1,22 @@
+name       : cxxopts
+version    : 3.1.1
+release    : 1
+source     :
+    - https://github.com/jarro2783/cxxopts/archive/refs/tags/v3.1.1.tar.gz : 523175f792eb0ff04f9e653c90746c12655f10cb70f1d5e6d6d9491420298a08
+homepage   : https://github.com/jarro2783/cxxopts
+license    : MIT
+component  : programming.library
+summary    : Lightweight C++ command line option parser
+description: |
+    Lightweight C++ command line option parser
+builddeps  :
+  - cmake
+setup      : |
+  %cmake_ninja
+build      : |
+  %ninja_build
+install    : |
+  %ninja_install
+  install -vDm 644 LICENSE -t "$installdir/usr/share/licenses/$pkgname/"
+  install -vDm 644 {CHANGELOG,README}.md -t "$installdir/usr/share/doc/$pkgname/"
+
