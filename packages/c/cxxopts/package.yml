@@ -17,6 +17,6 @@ build      : |
   %ninja_build
 install    : |
   %ninja_install
-  install -vDm 644 LICENSE -t "$installdir/usr/share/licenses/$pkgname/"
-  install -vDm 644 {CHANGELOG,README}.md -t "$installdir/usr/share/doc/$pkgname/"
+  install -vDm 644 LICENSE -t "$installdir/usr/share/licenses/cxxopts/"
+  install -vDm 644 {CHANGELOG,README}.md -t "$installdir/usr/share/doc/cxxopts/"
 
